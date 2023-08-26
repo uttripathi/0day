@@ -1,0 +1,14 @@
+import React from 'react'
+
+const Text2 = () => {
+  return (
+    <div className='font2 text-center text-[12px] sm:text-[12px] md:text-[16px] lg:text-[18px] xl:text-[20px] text-[#2FBAE9] p-2 '>
+      THIS CLUB WAS ESTABLISHED WITH AIM OF BRING CYBER SECURITY  CULTURE IN OUR COLLEGE.CLUB PROVIDES
+ EXCITING OPPUTUNITYS TO ITS MEMBERS  TO NOT ONLY DIVE DEEP IN CYBERSECURITY WORLD BUT ALSO
+ DEVELOP MANGERIAL SKILLS BY TAKING PART IN MANY EVENT LIKE HACKHATONS,SEMINARS CONSUCTED BY 
+CLUB TIME TO TIME.
+    </div>
+  )
+}
+
+export default Text2
