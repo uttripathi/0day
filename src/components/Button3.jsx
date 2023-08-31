@@ -10,9 +10,12 @@ const Button3 = (props) => {
       <div className='w-[900px] h-[] bg-white absolute left-1/3'>
       </div>
     </a>
-      <div  className={` ${dialog?"block":"hidden"} w-[80vw] h-[30rem] bg-blue-950 absolute left-[10vw] top-[10vh]`}>
+      <div  className={` ${dialog?"block":"hidden"} w-[80vw] h-[30rem] bg-blue-950 absolute left-[10vw] top-[60vh]`}>
         <div className='hover:cursor-pointer text-2xl px-4' onClick={()=>{setDialog(false)}}>
           x
+          <div className='flex justify-center items-center h-[25rem]'>
+            {props.details}
+          </div>
         </div>
       </div>
     </div>

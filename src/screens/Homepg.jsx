@@ -32,13 +32,13 @@ const Homepg = () => {
         <img src='images/logo.png' className=''/>
         <div className=''>
         <div className={`w-[10rem] flex flex-col gap-3 p-2 bg-slate-600 absolute ${showMenu?"block":"hidden"}`}>
-          <h3 onClick={()=>{setDialog(true)}}>Resources</h3>
-          <h3 onClick={()=>{setDialog(true)}}>contact us</h3>
-          <h3>Committee</h3>
-          <h3>Registeration</h3>
-          {/* <div  className={` ${dialog?"block":"hidden"} w-[50vw] h-[30rem] bg-white absolute left-[-30vw] top-[10vh]`}>
-        <div className='hover:cursor-pointer' onClick={()=>{setDialog(false)}}>X</div>
-      </div> */}
+          {/* <h3 onClick={()=>{setDialog(true)}}>Resources</h3> */}
+          <Button2 withDialog title="resources"/>
+          <div onClick={handleClick}>
+         <Button title="contact us"/>
+        </div>
+        <Button withDialog title="commitee"/>
+        <Button link={`https://docs.google.com/forms/d/e/1FAIpQLSc6pY9b8cL2f8puGBwOZ0Ka7jJEHzoRGMDAVUATdSbm7o0OGw/viewform`} title="registration"/> 
            </div>
 
         </div>
@@ -51,7 +51,9 @@ const Homepg = () => {
         <Button link={`https://docs.google.com/forms/d/e/1FAIpQLSc6pY9b8cL2f8puGBwOZ0Ka7jJEHzoRGMDAVUATdSbm7o0OGw/viewform`} title="registration"/> 
         </div>
         <div className='flex gap-4'>
+          <a href="https://instagram.com/0day_nitj?igshid=MzRlODBiNWFlZA==">
           <img src='images/Instagram circle (1).png'/>
+          </a>
           <img src='images/Twitter (1).png'/>
           <img src='images/GitHub (1).png'/>
         </div>
@@ -67,7 +69,7 @@ const Homepg = () => {
         <div className=' flex justify-between flex-wrap'>
           {
             AnnouncementData.map((announcement,index)=>(
-              <Wrapper title={announcement.title} des={announcement.des}/>
+              <Wrapper details={announcement.details} title={announcement.title} des={announcement.des}/>
             ))
           }
 

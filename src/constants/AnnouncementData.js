@@ -1,15 +1,19 @@
 const AnnouncementData = [
     {
         title:"announcement1",
-        des:""
+        des:"",
+        details:"NO Announcement yet"
+
     },
     {
         title:"announcement2",
-        des:""
+        des:"",
+        details:"No announcement yet"
     },
     {
         title:"announcement3",
-        des:""
+        des:"",
+        details:"No announcement yet"
     },
 ]
 

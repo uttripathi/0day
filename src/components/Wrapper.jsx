@@ -3,13 +3,14 @@ import Button3 from './Button3'
 
 const Wrapper = (props) => {
   return (
-    <div className='w-[288px] h-[288px] bg-[#1F4A58]  mx-8 my-8 relative px-4'>
+    <div className='p-4 w-[288px] h-[288px] bg-[#1F4A58] flex flex-col justify-between  mx-8 my-8 px-4'>
+      <div>
           <div>{props.title}</div>
           <div>{props.des}</div>
-        <div className='absolute bottom-0 right-8 h-12'>
-          <div className=''>
-
-        <Button3 withDialog title="see more"/>   
+      </div>
+        <div className=''>
+          <div className=' flex justify-end items-end'>
+          <Button3 details={props.details} withDialog title="see more"/>   
           </div>
         </div>
       
